@@ -1,0 +1,56 @@
+.about-page {
+  padding: 20px;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.about-page h2,
+.about-page h3 {
+  font-weight: bold;
+  color: #f8f9fa;
+}
+
+.about-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-page ul li {
+  margin-bottom: 10px;
+}
+
+.about-page ul li::before {
+  content: '✔️';
+  margin-right: 8px;
+  color: #17a2b8;
+}
+
+.about-page .about-image {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+}
+
+.about-page .icon {
+  font-size: 3rem;
+  color: #ffc107;
+}
+
+.about-page .icon:nth-child(2) {
+  color: #007bff;
+}
+
+.about-page .icon:nth-child(3) {
+  color: #28a745;
+}
+
+.about-page .divider {
+  width: 50px;
+  height: 3px;
+  background-color: #f8f9fa;
+}
+
+.about-page h4 {
+  margin-top: 20px;
+  color: #ffc107;
+}

@@ -1,0 +1,67 @@
+.navbar a.nav-link {
+  opacity: .75;
+  transition: opacity .2s ease-out;
+  color: white;
+}
+
+* {
+  color: white;
+}
+
+.navbar a.nav-link:hover {
+  opacity: 1;
+}
+
+body {
+  background: linear-gradient(180deg, rgb(0, 4, 19) 45%, rgba(6,11,45,1) 67%, rgba(46,49,74,1) 100%);
+  z-index: -99;
+}
+
+.navbar-material {
+  z-index: 99;
+
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(0,0,0,0.7) !important;
+
+  border-radius: 24px;
+  border: solid rgba(1,1,1,0.5) 1px;
+}
+
+.ms-footer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ms-footer p {
+  color: #7F7F7F;
+  font-size: 13px;
+}
+
+.ms-footer a:hover {
+  color: #3349ff;
+  text-decoration: none;
+  cursor: hand;
+}
+
+.ms-footer-bottom {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ms-footer-bottom span {
+  font-size: 13px;
+  line-height: 38px;
+}
+
+.ms-footer-bottom a {
+  color: #3349ff;
+  text-decoration: none;
+}
+
+.ms-footer-bottom a:hover {
+  color: #fff;
+}
+
+.img-card-400 {
+  width: fit-content;
+  max-height: 400px;
+}

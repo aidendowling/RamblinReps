@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, rgb(0, 4, 19) 45%, rgba(6,11,45,1) 67%, rgba(46,49,74,1) 100%);
+            z-index: -99;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1e2138;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-button:hover {
+            background-color: #3e3e3e;
+        }
+
+        .link-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .reset-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .reset-link:hover {
+            text-decoration: underline;
+        }
+
+        .error-message {
+            color: #ff0000;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% if reset_link %}
+            <p>Click the link below to reset your password:</p>
+            <div class="link-container">
+                <a href="{{ reset_link }}" class="reset-link">Click here to reset password</a>
+            </div>
+        {% else %}
+            <p class="error-message">No reset link available.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
